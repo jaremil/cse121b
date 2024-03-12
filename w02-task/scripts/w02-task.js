@@ -3,29 +3,30 @@
 /* Step 1 - Setup type tasks - no code required */
  
 /* Step 2 - Variables */
-let fullName = 'Jade Miller';
-let currentYear = '2024';
-let profilePicture = 'images/profile.jpeg';
+let fullname = "Jade Miller";
+let currentYear = new Date().getFullYear();
+let profilePicture = "images/profile.jpeg";
 
-/* Step 3 - Element Variables */
-const nameElement = document.getElementById('name');
-const foodElement = document.getElementById('food');
-const yearElement = document.getElementById('#year');
-const imageElement = document.getElementById('img');
+// /* Step 3 - Element Variables */
+let nameElement = document.getElementById("name");
+let foodElement = document.getElementById("food");
+let yearElement = document.querySelector("#year");
+let imageElement = document.querySelector("img");
 
-/* Step 4 - Adding Content */
-nameElement.innerHTML = `<strong>${fullName}</strong>`;
+// /* Step 4 - Adding Content */
+nameElement.innerHTML = `<strong>${fullname}</strong>`;
 yearElement.textContent = currentYear;
-imageElement.setAttribute('src', profilePicture);
-imageElement.setAttribute('alt', `Profile image of ${fullName}`);
+imageElement.setAttribute("src", profilePicture);
+imageElement.setAttribute("alt", `Profile image of ${fullname}`);
 
-/* Step 5 - Array */
-let favoriteFood = ['Eggs', 'Blueberries', 'Rice'];
-let singleFood = 'Tomatoes';
+// /* Step 5 - Array */
+let favoriteFoods = [" Eggs", " Blueberries", " Icecream"];
+let oneFood = " Tomatoes";
 
-favoriteFood.push(singleFood);
-foodElement.innerHTML += '<br>${favoriteFood}';
-favoriteFood.shift();
-foodElement.innerHTML += '<br>${favoriteFood}';
-favoriteFood.pop();
-foodElement.innerHTML += '<br>${favoriteFood}';
+foodElement.innerHTML = favoriteFoods;
+favoriteFoods.push(oneFood);
+foodElement.innerHTML += `<br>${favoriteFoods}`;
+favoriteFoods.shift();
+foodElement.innerHTML += `<br>${favoriteFoods}`;
+favoriteFoods.pop();
+foodElement.innerHTML += `<br>${favoriteFoods}`;
