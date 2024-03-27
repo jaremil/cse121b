@@ -1,0 +1,44 @@
+/* Must interact with the DOM of an HTML document. CSS is optional but highly encouraged at a basic level. */
+
+.container {
+    margin-top: 200px;
+    text-align: center;
+    color: #42548f;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a7bcff;
+    color: #42548f;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#c0cfff;
+    color: #5d6fac;
+}
+
+#searchButton {
+    padding: 1px 10px;
+    font-size: 16px;
+    background-color: #a7bcff;
+    color: #42548f;
+    border: none;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color:#c0cfff;
+    color: #5d6fac;
+}
+
+#recipeContainer {
+    margin-top: 20px;
+    padding: 20px;
+}
