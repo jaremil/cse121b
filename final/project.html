@@ -9,21 +9,41 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
-
-
     <div class="container">
         <h1>Recipe Search</h1>
-       
-        <button id="randomButton">Click for Random Recipe</button>
+        
+        <div class="filter">
+            <h2>Search by category:</h2>
+            <select id="filter-select">
+                <option value="">--</option>
+                <option value="biscuits_and_cookies">Biscuits and cookies</option>
+                <option value="bread">Bread</option>
+                <option value="cereals">Cereals</option>
+                <option value="desserts">Desserts</option>
+                <option value="drinks">Drinks</option>
+                <option value="pancake">Pancake</option>
+                <option value="preps">Preps</option>
+                <option value="preserve">Preserve</option>
+                <option value="salad">Salad</option>
+                <option value="sandwiches">Sandwiches</option>
+                <option value="soup">Soup</option>
+                <option value="starter">Starter</option>
+                <option value="sweets">Sweets</option>
+            </select>  
+            <button id="filter-select-submit">Submit</button>
+        </div>
 
+            <h2>Search randomly:</h2>
+            <button id="randomButton">Click for Random Recipe</button>
+
+        <h2>Search by name:</h2>
         <div class="searchContainer">
             <input type="text" id="searchInput" placeholder="Search for recipes...">
             <button id="searchButton">Search</button>
         </div>
 
         <div id="recipeContainer"></div>
-    </div>
 
-    <script src="final.js"></script>
+    <script src="project.js"></script>
 </body>
 </html>

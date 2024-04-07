@@ -11,6 +11,21 @@ h1 {
     color: #42548f;
 }
 
+h2 {
+    margin-top: 3%;
+    color: #42548f;
+}
+
+#filter-select-submit {
+    font-size: 100%;
+    margin-right: 10px;
+    background-color: #a7bcff;
+    color: #42548f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 #randomButton {
     padding: 10px 20px;
     font-size: 155%;
@@ -26,12 +41,9 @@ h1 {
     color: #5d6fac;
 }
 
-.searchContainer {
-    margin-top: 5%;
-}
-
 #searchButton {
     font-size: 155%;
+    margin-right: 10px;
     background-color: #a7bcff;
     color: #42548f;
     border: none;
@@ -51,6 +63,5 @@ h1 {
 }
 
 #recipeContainer {
-    margin-top: 10%;
-    padding: 10%;
+    margin-top: 5%;
 }
