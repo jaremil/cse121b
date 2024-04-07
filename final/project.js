@@ -40,7 +40,7 @@ async function filterRecipes(recipes) {
 
   const filter = document.getElementById("filter-select").value;
 
-  // At least one instance of conditional branching is used.
+  // Conditional Branching
   switch (filter) {
     case "biscuits_and_cookies":
       displayRecipe("biscuits%20and%20cookies");
@@ -99,11 +99,21 @@ async function filterRecipes(recipes) {
 /* Search Randomly Button */
 
 async function getRandom() {
-  const searchOptions = ["chicken", "tofu", "blueberry", "salmon", "rice", "chocolate", "lemon", "onion"];
+  // Array Method
+  const searchOptions = [
+    "chicken",
+    "tofu",
+    "blueberry",
+    "salmon",
+    "rice",
+    "chocolate",
+    "lemon",
+    "onion",
+  ];
   const searchTerm =
     searchOptions[Math.floor(Math.random() * searchOptions.length)];
 
-  // Fetch is used to get JSON data and used in the application.
+  // Fetch - JSON
   const response = await fetch(
     `https://api.edamam.com/api/recipes/v2?app_key=5da969c846771f1263644b02730a6d4e&app_id=1113c3cd&type=public&random=true&q=${searchTerm}`
   );
@@ -121,15 +131,15 @@ document.querySelector("#randomButton").addEventListener("click", () => {
 /* Search by Name */
 
 async function getName() {
-    reset();
-    let input = document.getElementById("searchInput").value
-    let data = await displayRecipe(input); 
-    
-    if (data.hits.length == 0){
-        document.querySelector("#recipeContainer").innerHTML = "No results";
-    }
+  reset();
+  let input = document.getElementById("searchInput").value;
+  let data = await displayRecipe(input);
+
+  if (data.hits.length == 0) {
+    document.querySelector("#recipeContainer").innerHTML = "No results";
+  }
 }
 
 document.querySelector("#searchButton").addEventListener("click", () => {
-    getName();
+  getName();
 });

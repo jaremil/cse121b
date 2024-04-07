@@ -16,8 +16,14 @@ h2 {
     color: #42548f;
 }
 
-#filter-select-submit {
+#filter-select {
     font-size: 100%;
+    padding-top: 10px;
+    padding-right: 5%;
+}
+
+#filter-select-submit {
+    font-size: 155%;
     margin-right: 10px;
     background-color: #a7bcff;
     color: #42548f;
